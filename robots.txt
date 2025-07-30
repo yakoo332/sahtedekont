@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://buketmedya.netlify.app/sitemap.xml
