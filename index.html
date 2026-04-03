@@ -1,242 +1,191 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <!-- SEO ve Sosyal Paylaşım Etiketleri -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google-site-verification" content="google0518a6fbcfea0628.html">
-  <title>BUKETMEDYA | Profesyonel Dekont & Evrak Düzenleme Hizmetleri</title>
-  <meta name="description" content="Dekont düzenleme (500₺), sıfırdan dekont oluşturma (1000₺), resmi evrak düzenleme (1000₺). Hızlı ve güvenilir çözümler için WhatsApp/Telegram: @buketmedya2" />
-  <meta name="keywords" content="dekont düzenleme, fatura düzenleme, resmi evrak, dilekçe yazdırma, adli sicil belgesi" />
-  <meta property="og:title" content="BUKETMEDYA | Resmi Evraklarda Profesyonel Destek" />
-  <meta property="og:description" content="Profesyonel dekont ve evrak düzenleme hizmetleri. Güvenilir, hızlı, uygun fiyatlı çözümler." />
-  <meta property="og:url" content="https://buketmedya.netlify.app" />
-  <meta property="og:type" content="website" />
-  <link rel="canonical" href="https://buketmedya.netlify.app" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <title>BUKETMEDYA</title>
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7PNVD69YJG"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-7PNVD69YJG');
-  </script>
-
-  <!-- Google Ads -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2883451146700500" crossorigin="anonymous"></script>
-
-  <!-- Bootstrap & Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
 
   <style>
     :root {
-      --buket-pink: #FF6B9E;
-      --buket-dark: #2A2A2A;
+      --buket-pink: #ff0055;
+      --buket-dark: #0f0f0f;
     }
-    body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f8f9fa; }
-    .navbar-brand { font-weight: 1000; color: var(--buket-pink) !important; }
-    .buket-bg { background: var(--buket-dark); }
-    .buket-btn { background: var(--buket-pink); border: none; }
-    .buket-btn:hover { background: #ff4785; }
-    .card { border: none; transition: transform 0.3s; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-    .card:hover { transform: translateY(-5px); }
+
+    body {
+      background: #0f0f0f;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma;
+    }
+
+    .navbar {
+      background: #000;
+    }
+
+    .navbar-brand {
+      color: var(--buket-pink) !important;
+      font-weight: bold;
+    }
+
+    .card {
+      background: #1a1a1a;
+      color: white;
+      border: 1px solid #222;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: var(--buket-pink);
+    }
+
+    .card-header {
+      background: #111 !important;
+    }
+
+    .btn-main {
+      background: var(--buket-pink);
+      border: none;
+    }
+
+    .btn-main:hover {
+      background: #cc0044;
+    }
+
     .telegram-banner {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background: #0088CC;
-      color: white;
-      padding: 12px 16px;
+      background: #0088cc;
+      padding: 10px 15px;
       border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      z-index: 1000;
-      display: flex;
-      align-items: center;
-      animation: pulse 2s infinite;
     }
-    .telegram-banner a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      margin-left: 8px;
-    }
-    .telegram-banner .close-btn {
-      margin-left: 12px;
-      cursor: pointer;
-      font-size: 14px;
-    }
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
+
+    a { text-decoration: none; }
   </style>
 </head>
+
 <body>
-    <!-- Navbar (Logo & Marka) -->
-    <nav class="navbar navbar-expand-lg navbar-dark buket-bg py-3">
-        <div class="container">
-            <a class="navbar-brand fs-3" href="#">
-                <i class="bi bi-file-earmark-text-fill me-2"></i>BUKETMEDYA
-            </a>
-            <span class="text-white-50 d-none d-md-block">Resmi Evraklarda Profesyonel Çözümler</span>
-        </div>
-    </nav>
 
-    <!-- Hero Banner (Slogan & CTA) -->
-    <header class="buket-bg text-white py-5 text-center">
-        <div class="container py-4">
-            <h1 class="display-5 fw-bold">Profesyonel Dekont ve Evrak Düzenleme Hizmetleri</h1>
-            <p class="lead mb-4">Dekont, fatura, adli sicil, dilekçe ve tüm resmi evraklarınız için <span class="text-warning">1 saatte</span> çözüm.</p>
-            <a href="#services" class="btn buket-btn btn-lg px-4">
-                <i class="bi bi-arrow-down-circle me-2"></i>HİZMETLERİ GÖR
-            </a>
-        </div>
-    </header>
-
-    <!-- Hizmetler (4 Kart) -->
-    <section id="services" class="py-5">
-        <div class="container">
-            <div class="row g-4">
-                <!-- Hizmet 1: Dekont Düzenleme -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card h-100">
-                        <div class="card-header bg-white text-center py-3">
-                            <i class="bi bi-receipt-cutoff fs-1 text-danger"></i>
-                        </div>
-                        <div class="card-body text-center">
-                            <h3 class="h5 fw-bold">DEKONT DÜZENLEME</h3>
-                            <p class="text-muted">Mevcut dekontlarınızda düzenleme veya düzeltme.</p>
-                            <p class="h4 fw-bold">500₺</p>
-                        </div>
-                        <div class="card-footer bg-white border-0">
-                            <a href="https://t.me/buketmedya2?text=Merhaba,%20DEKONT%20DÜZENLEME%20(500₺)%20için%20sipariş%20vermek%20istiyorum." 
-                               class="btn buket-btn w-100 mb-2" target="_blank">
-                               <i class="bi bi-whatsapp"></i> WhatsApp
-                            </a>
-                            <a href="https://t.me/buketmedya2?text=Merhaba,%20DEKONT%20DÜZENLEME%20(500₺)%20için%20sipariş%20vermek%20istiyorum." 
-                               class="btn btn-dark w-100" target="_blank">
-                               <i class="bi bi-telegram"></i> Telegram
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Hizmet 2: Sıfırdan Dekont -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card h-100">
-                        <div class="card-header bg-white text-center py-3">
-                            <i class="bi bi-file-earmark-plus fs-1 text-primary"></i>
-                        </div>
-                        <div class="card-body text-center">
-                            <h3 class="h5 fw-bold">SIFIRDAN DEKONT</h3>
-                            <p class="text-muted">Bankaya uygun profesyonel dekont oluşturma.</p>
-                            <p class="h4 fw-bold">1000₺</p>
-                        </div>
-                        <div class="card-footer bg-white border-0">
-                            <a href="https://wa.me/27742763482?text=Merhaba,%20SIFIRDAN%20DEKONT%20(1000₺)%20için%20sipariş%20vermek%20istiyorum." 
-                               class="btn buket-btn w-100 mb-2" target="_blank">
-                               <i class="bi bi-whatsapp"></i> WhatsApp
-                            </a>
-                            <a href="https://t.me/buketmedya2?text=Merhaba,%20SIFIRDAN%20DEKONT%20(1000₺)%20için%20sipariş%20vermek%20istiyorum." 
-                               class="btn btn-dark w-100" target="_blank">
-                               <i class="bi bi-telegram"></i> Telegram
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Hizmet 3: Evrak Düzenleme -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card h-100">
-                        <div class="card-header bg-white text-center py-3">
-                            <i class="bi bi-file-earmark-check fs-1 text-success"></i>
-                        </div>
-                        <div class="card-body text-center">
-                            <h3 class="h5 fw-bold">FATURA & RESMİ BELGE DÜZENLEME</h3>
-                            <p class="text-muted">Fatura, adli sicil, tapu gibi evraklarda değişiklik.</p>
-                            <p class="h4 fw-bold">1000₺</p>
-                        </div>
-                        <div class="card-footer bg-white border-0">
-                            <a href="https://wa.me/27742763482?text=Merhaba,%20FATURA%20DÜZENLEME%20(1000₺)%20için%20sipariş%20vermek%20istiyorum." 
-                               class="btn buket-btn w-100 mb-2" target="_blank">
-                               <i class="bi bi-whatsapp"></i> WhatsApp
-                            </a>
-                            <a href="https://t.me/buketmedya2?text=Merhaba,%20FATURA%20DÜZENLEME%20(1000₺)%20için%20sipariş%20vermek%20istiyorum." 
-                               class="btn btn-dark w-100" target="_blank">
-                               <i class="bi bi-telegram"></i> Telegram
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Hizmet 4: Dilekçe Yazma -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card h-100">
-                        <div class="card-header bg-white text-center py-3">
-                            <i class="bi bi-pen fs-1 text-info"></i>
-                        </div>
-                        <div class="card-body text-center">
-                            <h3 class="h5 fw-bold">DİLEKÇE YAZMA</h3>
-                            <p class="text-muted">Resmi kurumlara uygun hukuki dilekçe hazırlama.</p>
-                            <p class="h4 fw-bold">250₺</p>
-                        </div>
-                        <div class="card-footer bg-white border-0">
-                            <a href="https://wa.me/27742763482?text=Merhaba,%20DİLEKÇE%20YAZMA%20(250₺)%20için%20sipariş%20vermek%20istiyorum." 
-                               class="btn buket-btn w-100 mb-2" target="_blank">
-                               <i class="bi bi-whatsapp"></i> WhatsApp
-                            </a>
-                            <a href="https://t.me/buketmedya2?text=Merhaba,%20DİLEKÇE%20YAZMA%20(250₺)%20için%20sipariş%20vermek%20istiyorum." 
-                               class="btn btn-dark w-100" target="_blank">
-                               <i class="bi bi-telegram"></i> Telegram
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer Genişletme -->
-  <footer class="buket-bg text-white py-4">
-    <div class="container text-center">
-      <h3 class="h5 mb-3">BUKETMEDYA</h3>
-      <p class="mb-4">Resmi evraklarınız için güvenilir çözüm ortağınız.</p>
-      <div class="d-flex justify-content-center gap-3 mb-3">
-        <a href="https://t.me/buketmedya2" class="btn btn-outline-light" target="_blank">
-          <i class="bi bi-telegram"></i> Telegram
-        </a>
-        <a href="https://wa.me/27742763482" class="btn btn-outline-light" target="_blank">
-          <i class="bi bi-whatsapp"></i> WhatsApp
-        </a>
-      </div>
-      <div class="text-white-50 mb-3">
-        <a href="#" class="d-inline-block text-white-50 me-3">Gizlilik Politikası</a>
-        <a href="#" class="d-inline-block text-white-50">Kullanım Şartları</a>
-      </div>
-      <a href="blog.html" class="d-block text-white-50 mb-3">Dekont Düzenleme Süreci Hakkında Detaylar</a>
-      <p class="mt-3 mb-0 small text-white-50">© 2023 BUKETMEDYA - Tüm hakları saklıdır.</p>
-    </div>
-  </footer>
-
-  <!-- Telegram Banner -->
-  <div class="telegram-banner" id="telegramBanner">
-    <i class="bi bi-telegram fs-4"></i>
-    <a href="https://t.me/sahtedekont" target="_blank">Kanalımıza Katılın!</a>
-    <span class="close-btn" onclick="document.getElementById('telegramBanner').style.display = 'none';">×</span>
+<nav class="navbar navbar-dark py-3">
+  <div class="container">
+    <span class="navbar-brand fs-3">
+      <i class="bi bi-file-earmark-text-fill me-2"></i>BUKETMEDYA
+    </span>
   </div>
+</nav>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    setTimeout(() => {
-      document.getElementById('telegramBanner').style.display = 'flex';
-    }, 3000);
-  </script>
+<header class="text-center py-5">
+  <h1 class="fw-bold">Profesyonel Hizmetler</h1>
+  <p>Hızlı ve güvenilir çözümler</p>
+</header>
+
+<section class="container py-5">
+  <div class="row g-4">
+
+    <!-- 1 -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card h-100 text-center">
+        <div class="card-header py-3">
+          <i class="bi bi-receipt fs-1 text-danger"></i>
+        </div>
+        <div class="card-body">
+          <h5>DEKONT DÜZENLEME</h5>
+          <p>Mevcut dekont düzenleme</p>
+          <h4>500₺</h4>
+        </div>
+        <div class="card-footer border-0">
+          <a href="https://t.me/buketmedya2" class="btn btn-dark w-100">
+            <i class="bi bi-telegram"></i> Telegram
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card h-100 text-center">
+        <div class="card-header py-3">
+          <i class="bi bi-file-earmark-plus fs-1 text-primary"></i>
+        </div>
+        <div class="card-body">
+          <h5>SIFIRDAN DEKONT</h5>
+          <p>Profesyonel dekont oluşturma</p>
+          <h4>1000₺</h4>
+        </div>
+        <div class="card-footer border-0">
+          <a href="https://t.me/buketmedya2" class="btn btn-dark w-100">
+            <i class="bi bi-telegram"></i> Telegram
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card h-100 text-center">
+        <div class="card-header py-3">
+          <i class="bi bi-file-earmark-check fs-1 text-success"></i>
+        </div>
+        <div class="card-body">
+          <h5>RESMİ BELGE</h5>
+          <p>Evrak düzenleme</p>
+          <h4>1000₺</h4>
+        </div>
+        <div class="card-footer border-0">
+          <a href="https://t.me/buketmedya2" class="btn btn-dark w-100">
+            <i class="bi bi-telegram"></i> Telegram
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card h-100 text-center">
+        <div class="card-header py-3">
+          <i class="bi bi-pen fs-1 text-info"></i>
+        </div>
+        <div class="card-body">
+          <h5>DİLEKÇE YAZMA</h5>
+          <p>Resmi dilekçe hazırlanır</p>
+          <h4>250₺</h4>
+        </div>
+        <div class="card-footer border-0">
+          <a href="https://t.me/buketmedya2" class="btn btn-dark w-100">
+            <i class="bi bi-telegram"></i> Telegram
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5 Photoshop -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card h-100 text-center">
+        <div class="card-header py-3">
+          <i class="bi bi-image fs-1 text-warning"></i>
+        </div>
+        <div class="card-body">
+          <h5>PHOTOSHOP HİZMETİ</h5>
+          <p>Profesyonel düzenleme ve tasarım</p>
+          <h4>2000₺</h4>
+        </div>
+        <div class="card-footer border-0">
+          <a href="https://t.me/buketmedya2" class="btn btn-dark w-100">
+            <i class="bi bi-telegram"></i> Telegram
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="telegram-banner">
+  <a href="https://t.me/buketmedya2" style="color:white;">Telegram'dan yaz</a>
+</div>
+
 </body>
 </html>
